@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #4CAF50;
+    background-color: #0b2345;
     padding: 10px 0;
     text-align: center;
 }
@@ -61,10 +61,10 @@ header nav ul li a:hover {
 }
 
 .profile-pic {
-    width: 300px;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: 50px;
 }
 
 .about-text {
@@ -72,7 +72,7 @@ header nav ul li a:hover {
 }
 
 .ml-image {
-    position: absolute;
+    position: static;
     right: 0;
     top: 0;
     width: 50%;
@@ -124,7 +124,7 @@ header nav ul li a:hover {
 
 .section h2 {
     font-size: 2rem;
-    color: #4CAF50;
+    color: #133c60;
 }
 
 .project {
