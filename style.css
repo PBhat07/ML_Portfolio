@@ -18,7 +18,8 @@ header nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 40px;
 }
 
 header nav ul li {
@@ -37,12 +38,17 @@ header nav ul li a:hover {
 
 /* Hero Section */
 .hero {
-    background-color: #e0f7fa;
-    padding: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-image: url('images/img1.jpg'); /* Replace with your correct image path */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image from repeating */
     position: relative;
+    height: 100vh; /* Set the section to take the full viewport height */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    color: #fff; /* Ensure text is readable */
 }
 
 .hero-content {
@@ -81,21 +87,21 @@ header nav ul li a:hover {
 }
 
 .slanted-image {
-    width: 200%;
-    height: 200%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    clip-path: polygon(200% 0, 200% 200%, 60% 200%, 40% 0); /* Slanted effect */
+    clip-path: polygon(100% 0, 100% 100%, 60% 100%, 40% 0); /* Slanted effect */
 }
 
 /* Machine Learning image as background on the right */
 .ml-image {
     position: relative;
-    height: 200%;
-    width: 200%;
+    height: 100%;
+    width: 100%;
     background-image: url('images/img1.jpg'); /* Your machine learning image */
     background-size: cover;
     background-position: center;
-    clip-path: polygon(200% 0, 200% 200%, 60% 200%, 40% 0); /* Creates the slant effect */
+    clip-path: polygon(100% 0, 100% 100%, 60% 100%, 40% 0); /* Creates the slant effect */
 }
 
 /* Adjust the section for responsiveness */
