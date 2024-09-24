@@ -72,7 +72,7 @@ header nav ul li a:hover {
 }
 
 .ml-image {
-    position: static;
+    position: absolute;
     right: 0;
     top: 0;
     width: 50%;
