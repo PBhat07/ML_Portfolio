@@ -1,46 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Machine Learning Engineer Portfolio</title>
+    <title>Poorvita's ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+    <!-- Navigation Bar -->
     <header>
-        <h1>Poorvita Mahabaleshwar - Machine Learning & DevOps Engineer</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <section id="about">
+
+    <!-- Hero Section with Profile and ML Image -->
+    <section class="hero">
+        <div class="hero-content">
+            <!-- Profile Picture and About Me Text -->
+            <div class="about-me">
+                <img src="images/profile.jpg" alt="Picture of Poorvita" class="profile-pic">
+                <div class="about-text">
+                    <h1>Hi, I'm Poorvita</h1>
+                    <p>Machine Learning & DevOps Engineer passionate about AI, Robotics, and Audio-driven systems.</p>
+                </div>
+            </div>
+
+            <!-- Machine Learning Image on Right -->
+            <div class="ml-image">
+                <img src="images/ml-image.jpg" alt="Machine Learning Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am currently pursuing MSc in Computer Vision, Robotics, and Machine Learning at the University of Surrey...</p>
+        <p>
+            I am a dedicated and passionate Machine Learning and DevOps Engineer pursuing an MSc in Computer Vision, Robotics, and Machine Learning at the University of Surrey.
+            I have two years of experience in the software industry and have worked on exciting projects in computer vision and robotics.
+        </p>
     </section>
-    <section id="projects">
-        <h2>Projects</h2>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Audio-Driven Face Animation</h3>
+            <p>Using Wave2Vec 2.0 model to train audio to 3D mesh construction. Tools: MediaPipe, Wave2Vec.</p>
+        </div>
+        <div class="project">
+            <h3>Heart Murmur Detection</h3>
+            <p>Developing a model to detect heart murmurs using Wave2Vec and supervised learning.</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <h2>Skills</h2>
         <ul>
-            <li><strong>Audio-Driven Face Animation</strong>: Project description...</li>
-            <li><strong>Heart Murmur Detection</strong>: Project description...</li>
-            <li><strong>Action Recognition</strong>: Project description...</li>
+            <li>Python, C++, SQL, TensorFlow, PyTorch, Keras</li>
+            <li>Audio and Speech Analysis</li>
+            <li>Computer Vision, Robotics</li>
         </ul>
     </section>
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Python, C++, SQL, TensorFlow, PyTorch, Keras, AWS, etc.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Contact Me</h2>
         <p>Email: <a href="mailto:pbhat7799@gmail.com">pbhat7799@gmail.com</a></p>
     </section>
+
     <footer>
         <p>&copy; 2024 Poorvita Mahabaleshwar</p>
     </footer>
+
     <script src="script.js"></script>
 </body>
+
 </html>
