@@ -62,8 +62,8 @@ header nav ul li a:hover {
 
 .profile-pic {
     width: 150px;
-    height: 150px;
-    border-radius: 50%;
+    height: 200px;
+    border-radius: 60%;
     margin-right: 50px;
 }
 
@@ -87,22 +87,32 @@ header nav ul li a:hover {
     clip-path: polygon(100% 0, 100% 100%, 60% 100%, 40% 0); /* Slanted effect */
 }
 
-.ml-image img {
+/* Machine Learning image as background on the right */
+.ml-image {
+    position: relative;
+    height: 100%;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    opacity: 0.8; /* You can adjust this to add an overlay effect */
-    filter: grayscale(30%); /* Adds a grayscale effect */
+    background-image: url('images/img1.jpg'); /* Your machine learning image */
+    background-size: cover;
+    background-position: center;
+    clip-path: polygon(100% 0, 100% 100%, 60% 100%, 40% 0); /* Creates the slant effect */
 }
 
-.profile-pic:hover {
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
+/* Adjust the section for responsiveness */
+@media (max-width: 768px) {
+    .hero {
+        grid-template-columns: 1fr;
+    }
 
-.ml-image img:hover {
-    opacity: 1;
-    transition: opacity 0.3s ease;
+    .about-me {
+        order: 2;
+        padding: 20px;
+    }
+
+    .ml-image {
+        order: 1;
+        height: 50vh; /* Adjust for mobile */
+    }
 }
 
 /* Additional Styling for Text */
