@@ -45,8 +45,8 @@ header nav ul li a:hover {
     position: relative;
     height: 100vh; /* Full viewport height */
     display: flex;
-    align-items: center;
-    justify-content: center; /* Center the content */
+    align-items: flex-start;
+    justify-content: flex-start; /* Center the content */
     color: #fff;
 }
 
@@ -69,7 +69,7 @@ header nav ul li a:hover {
 .profile-pic {
     width: 120px; /* Adjust width to fit inside the circle */
     height: 120px;
-    border-radius: 50%; /* Keeps the profile picture circular */
+    border-radius: 80%; /* Keeps the profile picture circular */
     margin-bottom: 20px;
 }
 
@@ -106,4 +106,49 @@ header nav ul li a:hover {
         width: 100px; /* Smaller profile pic for smaller screens */
         height: 100px;
     }
+}
+
+/* Section Styling */
+.section {
+    padding: 40px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section h2 {
+    font-size: 2rem;
+    color: #4CAF50;
+}
+
+.project {
+    margin: 20px 0;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.project p {
+    font-size: 1rem;
+    color: #666;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
