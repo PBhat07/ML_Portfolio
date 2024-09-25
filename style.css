@@ -67,9 +67,9 @@ header nav ul li a:hover {
 
 /* Profile Picture Styling */
 .profile-pic {
-    width: 120px; /* Adjust width to fit inside the circle */
-    height: 120px;
-    border-radius: 80%; /* Keeps the profile picture circular */
+    width: 160px; /* Adjust width to fit inside the circle */
+    height: 160px;
+    border-radius: 100%; /* Keeps the profile picture circular */
     margin-bottom: 20px;
 }
 
@@ -119,7 +119,7 @@ header nav ul li a:hover {
 
 .section h2 {
     font-size: 2rem;
-    color: #4CAF50;
+    color: #02191d;
 }
 
 .project {
