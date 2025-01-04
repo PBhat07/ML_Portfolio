@@ -119,9 +119,9 @@ header nav ul li a:hover {
 /* Project Section */
 .project-wrapper {
     position: relative;
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
-    padding: 20px 0;
+    margin: 0;
 }
 
 .project-container {
@@ -129,7 +129,7 @@ header nav ul li a:hover {
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 10px 0;
+    padding: 0;
     white-space: nowrap;
 }
 
