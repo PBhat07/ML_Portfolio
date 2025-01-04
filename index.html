@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poorvita's ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    
 </head>
 
 <body>
@@ -46,56 +47,85 @@
     <!-- Projects Section -->
     <section id="projects" class="section">
         <h2>Projects</h2>
-        <div class="project-container">
-            <!-- Project 1 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Audio-Driven Face Animation">
-                <div class="project-title">Audio-Driven Face Animation</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+        <div class="project-wrapper">
+            <button class="scroll-button left" onclick="scrollProjects(-1)">&#10094;</button>
+            <div class="project-container">
+                <!-- Project 1 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Audio-Driven Face Animation">
+                    <div class="project-title">Audio-Driven Face Animation</div>
+                    <a href="https://github.com/PBhat07/Audio2Mesh.git" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 2 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Heart Murmur Detection Model">
-                <div class="project-title">Heart Murmur Detection Model</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+                <!-- Project 2 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Heart Murmur Detection Model">
+                    <div class="project-title">Heart Murmur Detection Model</div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 3 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Action Recognition using TimeSformer">
-                <div class="project-title">Action Recognition using TimeSformer</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+                <!-- Project 3 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Action Recognition using TimeSformer">
+                    <div class="project-title">Action Recognition using TimeSformer</div>
+                    <a href="https://github.com/feemthan/aml_coursework" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 4 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Vehicle ID Recognition">
-                <div class="project-title">Vehicle ID Recognition</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+                <!-- Project 4 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Vehicle ID Recognition">
+                    <div class="project-title">Vehicle ID Recognition</div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 5 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Speech Production Modelling">
-                <div class="project-title">Speech Production Modelling</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+                <!-- Project 5 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Speech Production Modelling">
+                    <div class="project-title">Speech Production Modelling</div>
+                    <a href="https://github.com/PBhat07/Speech-production-modelling" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 6 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Turtlebot SLAM Exploration and Mapping">
-                <div class="project-title">Turtlebot SLAM Exploration and Mapping</div>
-                <a href="#" class="project-link">View on GitHub</a>
-            </div>
+                <!-- Project 6 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Turtlebot SLAM Exploration and Mapping">
+                    <div class="project-title">Turtlebot SLAM Exploration and Mapping</div>
+                    <a href="#" class="project-link">View on GitHub</a>
+                </div>
 
-            <!-- Project 7 -->
-            <div class="project">
-                <img src="https://via.placeholder.com/300x200" alt="Face Analysis Project">
-                <div class="project-title">Face Analysis Project</div>
-                <a href="#" class="project-link">View on GitHub</a>
+                <!-- Project 7 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Face Analysis Project">
+                    <div class="project-title">Face Analysis Project</div>
+                    <a href="https://github.com/PBhat07/face_analysis_project" class="project-link">View on GitHub</a>
+                </div>
+
+                <!-- Project 8 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="Fabric Identification">
+                    <div class="project-title">Fabric Identification</div>
+                    <a href="https://github.com/PBhat07/fabric_identification" class="project-link">View on GitHub</a>
+                </div>
+
+                <!-- Project 9 -->
+                <div class="project">
+                    <img src="https://via.placeholder.com/300x200" alt="ML Portfolio">
+                    <div class="project-title">ML Portfolio</div>
+                    <a href="https://github.com/PBhat07/ML_Portfolio" class="project-link">View on GitHub</a>
+                </div>
             </div>
+            <button class="scroll-button right" onclick="scrollProjects(1)">&#10095;</button>
         </div>
     </section>
+
+    <script>
+        function scrollProjects(direction) {
+            const container = document.querySelector('.project-container');
+            const scrollAmount = 300; // Adjust scroll amount as needed
+            container.scrollBy({
+                left: direction * scrollAmount,
+                behavior: 'smooth'
+            });
+        }
+    </script>
 </body>
 </html>
