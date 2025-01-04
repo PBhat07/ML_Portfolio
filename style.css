@@ -116,10 +116,12 @@ header nav ul li a:hover {
     color: #02191d;
 }
 
+/* Project Section */
 .project-wrapper {
     position: relative;
     width: 100%;
     overflow: hidden;
+    padding: 20px 0;
 }
 
 .project-container {
@@ -127,11 +129,13 @@ header nav ul li a:hover {
     gap: 20px;
     overflow-x: auto;
     scroll-behavior: smooth;
-    padding: 20px 0;
+    padding: 10px 0;
+    white-space: nowrap;
 }
 
 .project {
-    min-width: 300px;
+    flex: 0 0 auto;
+    width: 300px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
