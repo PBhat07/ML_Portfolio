@@ -127,7 +127,7 @@ header nav ul li a:hover {
 .project-container {
     display: flex;
     gap: 50px; /* Increased gap between projects */
-    overflow-x: auto;
+    overflow-x: hidden;
     scroll-behavior: smooth;
     padding: 0 20px;
     white-space: nowrap;
