@@ -6,126 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poorvita's ML Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <div class="container">
+        <!-- Navigation Bar -->
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-   <!-- Hero Section with Profile and ML Image -->
-<section class="hero">
-    <div class="hero-content">
-        <!-- Profile Picture on the left -->
-        <div class="about-me">
-            <img src="images/my_img.jpg" alt="Picture of Poorvita" class="profile-pic">
-            <div class="about-text">
-                <h1>Hi, I'm Poorvita</h1>
-                <p>Computer vision & ML Engineer passionate about AI, Robotics, and Audio-driven systems.</p>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <!-- Profile Picture and Intro -->
+                <div class="profile-section">
+                    <img src="images/my_img.jpg" alt="Picture of Poorvita" class="profile-pic">
+                    <div class="intro">
+                        <h1>Hi, I'm Poorvita</h1>
+                        <p>Computer vision & ML Engineer passionate about AI, Robotics, and Audio-driven systems.</p>
+                    </div>
+                </div>
             </div>
-        </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="section">
+            <div class="content-wrapper">
+                <h2>About Me</h2>
+                <p>
+                    "A lesson in innovation lies in pushing boundaries and rewriting what's possible." — inspired by
+                    *Hiromu Arakawa, Fullmetal Alchemist. Guided by this belief, I see the art of innovation as bridging
+                    theoretical research with real-world applications that connect deeply to our surroundings and lives.
+                    Through my journey in vision and sound, I strive to transform ideas into impactful realities.
+                </p>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="content-wrapper">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <!-- Project 1 -->
+                    <div class="project">
+                        <img src="/mnt/c/Users/bluek/ML_Portfolio/images/audio_driven_face_animation.png" alt="Audio-Driven Face Animation">
+                        <h3>Audio-Driven Face Animation</h3>
+                        <a href="https://github.com/PBhat07/Audio2Mesh.git" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project">
+                        <img src="/mnt/c/Users/bluek/ML_Portfolio/images/heart_murmur_detection.png" alt="Heart Murmur Detection Model">
+                        <h3>Heart Murmur Detection Model</h3>
+                        <a href="#" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project">
+                        <img src="/mnt/data/project_images/Action_Recognition_using_TimeSformer.png" alt="Action Recognition using TimeSformer">
+                        <h3>Action Recognition using TimeSformer</h3>
+                        <a href="https://github.com/feemthan/aml_coursework" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project">
+                        <img src="/mnt/c/Users/bluek/ML_Portfolio/images/vehicle_id_recognition.jpg" alt="Vehicle ID Recognition">
+                        <h3>Vehicle ID Recognition</h3>
+                        <a href="#" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div class="project">
+                        <img src="/mnt/data/project_images/Speech_Production_Modelling.png" alt="Speech Production Modelling">
+                        <h3>Speech Production Modelling</h3>
+                        <a href="https://github.com/PBhat07/Speech-production-modelling" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div class="project">
+                        <img src="/mnt/data/project_images/Turtlebot_SLAM_Exploration_and_Mapping.png" alt="Turtlebot SLAM Exploration and Mapping">
+                        <h3>Turtlebot SLAM Exploration and Mapping</h3>
+                        <a href="#" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 7 -->
+                    <div class="project">
+                        <img src="/mnt/data/project_images/Face_Analysis_Project.png" alt="Face Analysis Project">
+                        <h3>Face Analysis Project</h3>
+                        <a href="https://github.com/PBhat07/face_analysis_project" class="project-link">View on GitHub</a>
+                    </div>
+
+                    <!-- Project 8 -->
+                    <div class="project">
+                        <img src="/mnt/data/project_images/Fabric_Identification.png" alt="Fabric Identification">
+                        <h3>Fabric Identification</h3>
+                        <a href="https://github.com/PBhat07/fabric_identification" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="content-wrapper">
+                <h2>Skills</h2>
+                <ul>
+                    <li>Python, C++, TensorFlow, PyTorch</li>
+                    <li>Computer Vision, Deep Learning</li>
+                    <li>Edge AI, Embedded Systems</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="content-wrapper">
+                <h2>Contact</h2>
+                <p>Email: <a href="mailto:pbhat7799@gmail.com">pbhat7799@gmail.com</a></p>
+                <p>Phone: +44 7874368483</p>
+            </div>
+        </section>
     </div>
-</section>
 
-    <!-- About Me Section -->
-    <section id="about" class="section">
-        <h2>About Me</h2>
-        <p>
-            "A lesson in innovation lies in pushing boundaries and rewriting what's possible." — inspired by *Hiromu Arakawa, Fullmetal Alchemist. Guided by this belief, I see the art of innovation as bridging theoretical research with real-world applications that connect deeply to our surroundings and lives. Through my journey in vision and sound, I strive to transform ideas into impactful realities.
-        </p>
-    </section>
-
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <h2>Projects</h2>
-        <div class="project-wrapper">
-            <button class="scroll-button left" onclick="scrollProjects(-1)">&#10094;</button>
-            <div class="project-container">
-                <!-- Project 1 -->
-                <div class="project">
-                    <img src="/mnt/c/Users/bluek/ML_Portfolio/images/audio_driven_face_animation.png" alt="Audio-Driven Face Animation">
-                    <div class="project-title">Audio-Driven Face Animation</div>
-                    <a href="https://github.com/PBhat07/Audio2Mesh.git" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 2 -->
-                <div class="project">
-                    <img src="/mnt/c/Users/bluek/ML_Portfolio/images/heart_murmur_detection.png" alt="Heart Murmur Detection Model">
-                    <div class="project-title">Heart Murmur Detection Model</div>
-                    <a href="#" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 3 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/Action_Recognition_using_TimeSformer.png" alt="Action Recognition using TimeSformer">
-                    <div class="project-title">Action Recognition using TimeSformer</div>
-                    <a href="https://github.com/feemthan/aml_coursework" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project">
-                    <img src="/mnt/c/Users/bluek/ML_Portfolio/images/vehicle_id_recognition.jpg" alt="Vehicle ID Recognition">
-                    <div class="project-title">Vehicle ID Recognition</div>
-                    <a href="#" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/Speech_Production_Modelling.png" alt="Speech Production Modelling">
-                    <div class="project-title">Speech Production Modelling</div>
-                    <a href="https://github.com/PBhat07/Speech-production-modelling" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/Turtlebot_SLAM_Exploration_and_Mapping.png" alt="Turtlebot SLAM Exploration and Mapping">
-                    <div class="project-title">Turtlebot SLAM Exploration and Mapping</div>
-                    <a href="#" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 7 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/Face_Analysis_Project.png" alt="Face Analysis Project">
-                    <div class="project-title">Face Analysis Project</div>
-                    <a href="https://github.com/PBhat07/face_analysis_project" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 8 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/Fabric_Identification.png" alt="Fabric Identification">
-                    <div class="project-title">Fabric Identification</div>
-                    <a href="https://github.com/PBhat07/fabric_identification" class="project-link">View on GitHub</a>
-                </div>
-
-                <!-- Project 9 -->
-                <div class="project">
-                    <img src="/mnt/data/project_images/ML_Portfolio.png" alt="ML Portfolio">
-                    <div class="project-title">ML Portfolio</div>
-                    <a href="https://github.com/PBhat07/ML_Portfolio" class="project-link">View on GitHub</a>
-                </div>
-            </div>
-            <button class="scroll-button right" onclick="scrollProjects(1)">&#10095;</button>
-        </div>
-    </section>
-
-    <script>
-        function scrollProjects(direction) {
-            const container = document.querySelector('.project-container');
-            const scrollAmount = 300; // Adjust scroll amount as needed
-            container.scrollBy({
-                left: direction * scrollAmount,
-                behavior: 'smooth'
-            });
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
+
 </html>
