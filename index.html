@@ -51,6 +51,43 @@
             <h2 class="text-4xl font-bold text-center text-indigo-800 mb-12">My Projects</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
+                <!-- Project Card: DocuPilot — Evidence-Grounded Documentation Assistant -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
+                    <div class="w-full h-48 bg-gradient-to-br from-indigo-100 via-purple-100 to-blue-100 flex items-center justify-center">
+                        <div class="text-center px-6">
+                            <i class="fas fa-book-open text-5xl text-indigo-600 mb-3"></i>
+                            <p class="text-xl font-bold text-indigo-800">DocuPilot</p>
+                            <p class="text-sm text-indigo-600">Evidence-grounded documentation assistant</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-indigo-700 mb-3">DocuPilot – Evidence-Grounded RAG Assistant</h3>
+                        <p class="text-gray-600 mb-4">
+                            Built an end-to-end RAG application for technical documentation. It crawls and extracts pages asynchronously,
+                            chunks content, creates embeddings and stores vectors in Weaviate, while MongoDB tracks source metadata and
+                            page versions. For each question, the pipeline retrieves passages, filters superseded versions, reranks
+                            evidence with a cross-encoder, and uses a configurable LLM to return cited answers—or abstain when the
+                            available evidence is insufficient. The workflow is exposed through a FastAPI backend, CLI, optional
+                            Streamlit UI, and Docker Compose.
+                        </p>
+                        <div class="flex flex-wrap gap-2 text-sm">
+                            <span class="bg-indigo-100 text-indigo-800 px-3 py-1 rounded-full">RAG</span>
+                            <span class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full">FastAPI</span>
+                            <span class="bg-green-100 text-green-800 px-3 py-1 rounded-full">Scrapy</span>
+                            <span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full">Weaviate</span>
+                            <span class="bg-pink-100 text-pink-800 px-3 py-1 rounded-full">MongoDB</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full">Redis / RQ</span>
+                            <span class="bg-orange-100 text-orange-800 px-3 py-1 rounded-full">Docker Compose</span>
+                            <span class="bg-cyan-100 text-cyan-800 px-3 py-1 rounded-full">Cross-Encoder Reranking</span>
+                        </div>
+                        <a href="https://github.com/PBhat07/docupilot" target="_blank" rel="noopener noreferrer"
+                           class="mt-4 inline-block text-indigo-600 hover:text-indigo-800 font-semibold transition duration-300">
+                            <i class="fab fa-github mr-2"></i>View on GitHub &rarr;
+                        </a>
+                    </div>
+                </div>
+
+
                                 <!-- NEW PROJECT CARD: 3D Facial Avatars with Depth & Generative Priors -->
                 <div class="bg-white rounded-xl shadow-lg overflow-hidden project-card">
                     <img src="images/avatar_depth_sds.png" alt="3D Facial Avatars with Depth & Generative Priors" class="w-full h-48 object-cover">
